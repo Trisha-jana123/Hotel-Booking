@@ -14,25 +14,23 @@ A full-featured hotel booking web application built with **Django**, **SQLite**,
 ## 🛠️ Tech Stack
 
 - **Backend**: Django (Python)
-- **Frontend**: HTML, CSS, Bootstrap
+- **Frontend**: HTML5, CSS3, Bootstrap
 - **Database**: SQLite
 - **Templating Engine**: Django Templates
 
-## 🧑‍💻 How to Run Locally (Optional for Reviewers)
+## 🧑‍💻 How to Run Locally
 
-If you'd like to explore the project locally, here’s how you can set it up on a Windows system:
-
-**Clone the repository**
-   ```bash
-   git clone https://github.com/Trisha-jana123/Hotel-Booking.git
-   cd Hotel-Booking
-   python -m venv venv
-   .\venv\Scripts\activate
-   pip install -r requirements.txt
-   cd project
-   python manage.py runserver
-   Visit `http://127.0.0.1:8000/` to access the app
+```bash
+git clone https://github.com/yourusername/hotel-booking-platform.git
+cd hotel-booking-platform
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
 ```
+
+Visit `http://127.0.0.1:8000/` to access the app.
 
 ## 📸 Screenshots
 
@@ -48,5 +46,29 @@ If you'd like to explore the project locally, here’s how you can set it up on 
 ### 🧾 Booking Form Page
 ![Booking Form](images/booking-form.png)
 
+## 📝 Future Improvements
 
+- Payment gateway integration
+- Admin panel for hotel/room management
+- Email booking confirmations
+- Booking cancellation/modification logic
 
+## 📂 Folder Structure
+
+```
+hotel_booking_platform/
+├── bookings/            # App for booking logic
+├── users/               # User authentication and profile
+├── templates/           # HTML templates
+├── static/              # CSS, JS, and image files
+├── db.sqlite3           # Database file
+└── manage.py
+```
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
